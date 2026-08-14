@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Futebol News</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="topo">
+
+        <div class="logo">
+            ⚽ Futebol News
+        </div>
+
+        <button id="tema">
+            🌙
+        </button>
+
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#transferencias">Transferências</a>
+        <a href="#jogos">Jogos</a>
+    </nav>
+
+</header>
+
+
+<main id="inicio">
+
+    <!-- DESTAQUE -->
+
+    <section class="destaque">
+
+        <div class="destaque-texto">
+
+            <span>🔥 DESTAQUE</span>
+
+            <h1>
+                Mercado do futebol ganha novas movimentações
+            </h1>
+
+            <p>
+                Clubes começam a anunciar novidades para a
+                próxima temporada e movimentam os torcedores.
+            </p>
+
+            <button onclick="abrirNoticia()">
+                Ler notícia
+            </button>
+
+        </div>
+
+        <div class="destaque-imagem">
+            ⚽
+        </div>
+
+    </section>
+
+
+    <!-- NOTÍCIAS -->
+
+    <section id="noticias">
+
+        <h2 class="titulo">
+            📰 Últimas notícias
+        </h2>
+
+        <div class="noticias">
+
+
+            <article class="card">
+
+                <div class="imagem verde">
+                    ⚽
+                </div>
+
+                <div class="conteudo">
+
+                    <span>CAMPEONATO</span>
+
+                    <h3>
+                        Equipe se prepara para o próximo desafio
+                    </h3>
+
+                    <p>
+                        O time intensificou os treinamentos antes
+                        da próxima partida.
+                    </p>
+
+                    <small>
+                        Hoje • 10:30
+                    </small>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="imagem azul">
+                    🏆
+                </div>
+
+                <div class="conteudo">
+
+                    <span>CAMPEÕES</span>
+
+                    <h3>
+                        Torneio promete grandes disputas
+                    </h3>
+
+                    <p>
+                        Os principais clubes já se preparam para
+                        a nova competição.
+                    </p>
+
+                    <small>
+                        Hoje • 09:50
+                    </small>
+
+                </div>
+
+            </article>
+
+
+            <article class="card" id="transferencias">
+
+                <div class="imagem vermelho">
+                    💰
+                </div>
+
+                <div class="conteudo">
+
+                    <span>TRANSFERÊNCIAS</span>
+
+                    <h3>
+                        Clubes anunciam novos reforços
+                    </h3>
+
+                    <p>
+                        O mercado da bola começa a ganhar força
+                        com novas contratações.
+                    </p>
+
+                    <small>
+                        Hoje • 09:20
+                    </small>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="imagem amarelo">
+                    ⭐
+                </div>
+
+                <div class="conteudo">
+
+                    <span>JOGADORES</span>
+
+                    <h3>
+                        Atacante ganha destaque na temporada
+                    </h3>
+
+                    <p>
+                        O jogador vem chamando atenção com boas
+                        atuações durante os últimos jogos.
+                    </p>
+
+                    <small>
+                        Hoje • 08:45
+                    </small>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- JOGOS -->
+
+    <section id="jogos">
+
+        <h2 class="titulo">
+            📅 Próximos jogos
+        </h2>
+
+        <div class="jogos">
+
+            <div class="jogo">
+
+                <span>CAMPEONATO</span>
+
+                <h3>
+                    🔵 Clube Azul
+                    <strong>VS</strong>
+                    🔴 Clube Vermelho
+                </h3>
+
+                <p>
+                    Hoje • 20:00
+                </p>
+
+            </div>
+
+
+            <div class="jogo">
+
+                <span>CAMPEONATO</span>
+
+                <h3>
+                    🟢 Clube Verde
+                    <strong>VS</strong>
+                    🟡 Clube Amarelo
+                </h3>
+
+                <p>
+                    Amanhã • 18:30
+                </p>
+
+            </div>
+
+
+            <div class="jogo">
+
+                <span>FINAL</span>
+
+                <h3>
+                    ⚫ Clube Preto
+                    <strong>VS</strong>
+                    ⚪ Clube Branco
+                </h3>
+
+                <p>
+                    Domingo • 16:00
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PESQUISA -->
+
+    <section class="pesquisa">
+
+        <h2>
+            🔎 Pesquisar notícia
+        </h2>
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Digite o título..."
+        >
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+        <h2>
+            📩 Receba notícias de futebol
+        </h2>
+
+        <p>
+            Cadastre seu e-mail para receber novidades.
+        </p>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Seu e-mail"
+        >
+
+        <button onclick="cadastrar()">
+            Cadastrar
+        </button>
+
+        <p id="mensagem"></p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <h2>
+        ⚽ Futebol News
+    </h2>
+
+    <p>
+        Seu portal de notícias sobre futebol.
+    </p>
+
+    <p>
+        © 2026 Futebol News
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
