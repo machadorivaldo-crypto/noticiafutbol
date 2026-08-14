@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+
+    color: #172033;
+
+    transition: 0.3s;
+}
+
+
+/* HEADER */
+
+header {
+    background: #07522d;
+
+    color: white;
+}
+
+.topo {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+#tema {
+    background: #0b7040;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+
+/* MENU */
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-bottom: 18px;
+
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #86efac;
+}
+
+
+/* MAIN */
+
+main {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* DESTAQUE */
+
+.destaque {
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    min-height: 390px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #064e3b,
+            #16a34a
+        );
+
+    color: white;
+}
+
+.destaque-texto {
+    padding: 55px;
+}
+
+.destaque-texto span {
+    color: #bbf7d0;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.destaque h1 {
+    font-size: 44px;
+
+    margin: 20px 0;
+}
+
+.destaque p {
+    color: #dcfce7;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.destaque button {
+    background: white;
+
+    color: #166534;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.destaque-imagem {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 150px;
+
+    background:
+        radial-gradient(
+            circle,
+            #4ade80,
+            #166534
+        );
+}
+
+
+/* TÍTULO */
+
+.titulo {
+    margin: 55px 0 25px;
+
+    font-size: 30px;
+}
+
+
+/* NOTÍCIAS */
+
+.noticias {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.imagem {
+    height: 170px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 80px;
+}
+
+.verde {
+    background: #dcfce7;
+}
+
+.azul {
+    background: #dbeafe;
+}
+
+.vermelho {
+    background: #fee2e2;
+}
+
+.amarelo {
+    background: #fef9c3;
+}
+
+.conteudo {
+    padding: 23px;
+}
+
+.conteudo span {
+    color: #15803d;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.conteudo h3 {
+    margin: 10px 0;
+
+    font-size: 21px;
+}
+
+.conteudo p {
+    color: #667085;
+
+    line-height: 1.5;
+}
+
+.conteudo small {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #98a2b3;
+}
+
+
+/* JOGOS */
+
+.jogos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.jogo {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.07);
+}
+
+.jogo span {
+    color: #15803d;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.jogo h3 {
+    margin: 18px 0;
+
+    line-height: 2;
+}
+
+.jogo strong {
+    margin: 0 10px;
+
+    color: #16a34a;
+}
+
+.jogo p {
+    color: #667085;
+}
+
+
+/* PESQUISA */
+
+.pesquisa {
+    margin: 60px 0;
+}
+
+.pesquisa h2 {
+    margin-bottom: 20px;
+}
+
+.pesquisa input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    margin: 60px 0;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #064e3b,
+            #16a34a
+        );
+}
+
+.newsletter h2 {
+    font-size: 30px;
+}
+
+.newsletter p {
+    margin: 12px 0 20px;
+
+    color: #dcfce7;
+}
+
+.newsletter input {
+    padding: 14px;
+
+    width: 300px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.newsletter button {
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #facc15;
+
+    color: #422006;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#mensagem {
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #064e3b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+footer p {
+    color: #a7f3d0;
+
+    margin-top: 10px;
+}
+
+
+/* MODO ESCURO */
+
+body.escuro {
+    background: #0b1120;
+
+    color: white;
+}
+
+body.escuro .card,
+body.escuro .jogo {
+    background: #172033;
+}
+
+body.escuro .conteudo p,
+body.escuro .jogo p {
+    color: #b8c1d1;
+}
+
+body.escuro .pesquisa input {
+    background: #172033;
+
+    color: white;
+
+    border-color: #344054;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    nav {
+        overflow-x: auto;
+    }
+
+    .destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-texto {
+        padding: 35px;
+    }
+
+    .destaque h1 {
+        font-size: 34px;
+    }
+
+    .destaque-imagem {
+        min-height: 220px;
+    }
+
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter input {
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+}
